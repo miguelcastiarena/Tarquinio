@@ -40,14 +40,30 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="sticky top-0 bg-white grid grid-cols-2 py-5 px-8 shadow-lg shadow-gray-500 ">
-      <div>
-        <img src="./img/logo.svg" alt="Tarquinio">
-      </div>
-    <div class="flex justify-end">
-      <img class="h-6" src="./img/hamburguer.svg" alt=""  >
-    </div>        
+  <header class="sticky top-0 bg-white grid grid-cols-2 py-5 px-8 shadow-lg shadow-gray-500 ">
+    
+    <div>
+      <img src="./img/logo.svg" alt="Tarquinio">
+    </div>
+  
+    <menu class="flex justify-end">
+      <label for="hamburger">
+        <img class="h-6" src="./img/hamburguer.svg" alt="">
+      </label>
+
+    </menu>        
+    
+
+    <input type="checkbox" id="hamburger" class="peer hidden">
+
+    <ul class="hidden peer-checked:block">
+      <li>Tarquinio</li>
+      <li>Contacto</li>
+      <li>Reservas</li>
+    </ul>
+    
     </header>
+
     <main>
         <div>
             <h2>¡Hola! Te damos la bienvenida</h2>

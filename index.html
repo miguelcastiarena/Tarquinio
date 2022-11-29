@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -22,7 +25,7 @@
       'white': '#FFF'
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Open Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {
@@ -56,32 +59,36 @@
 
     <input type="checkbox" id="hamburger" class="peer hidden">
 
-    <ul class="hidden peer-checked:block">
-      <li>Tarquinio</li>
-      <li>Contacto</li>
-      <li>Reservas</li>
-    </ul>
+    <div class="cols-span-2 hidden peer-checked:block object-center">
+      <div class="text-green my-4 mx-auto font-sans text-xl text-center">Inicio</div>
+      <div class="text-green my-4 mx-auto font-sans text-xl text-center">Contacto</div>
+      <div class="text-green my-4 mx-auto font-sans text-xl text-center">Reservas</div>
+    </div>
     
     </header>
 
     <main>
-        <div>
-            <h2>¡Hola! Te damos la bienvenida</h2>
-            <p>Tarquinio es un lugar para disfrutar de Tigre, el Delta y todas sus posibilidades, desde un punto preferencial.
+        <div class="grid grid-cols-1 ">
+            <img class="text-green self-center mx-auto mt-8 mb-3" src="./img/palmeras.svg" alt="">
+            <h2 class="text-green self-center mx-auto"> <span class="font-bold">¡Hola!</span>  Te damos la bienvenida</h2>
+            <p class="text-green self-center mx-3 my-5 text-center"> <span class="font-bold">Tarquinio</span>  es un lugar para disfrutar <br> de <span class="font-bold">Tigre, el Delta</span> y todas <br> experiencias.
             </p>
         </div>
         <div>
-            Galeria
             <img src="./img/foto.svg" alt="">
                 
         </div>
-        <div>
-            <p>¿Donde queda Tarquinio?</p>
+        <div class="grid grid-cols-1 ">
+          <p class="text-green self-center mx-3 my-5 text-center">El departamento está preparado para 2 <br> personas, con acceso a terraza y lavadero. <br>
+            Ideal para unas hermosas vacaciones o <br> escapada de fin de semanana. </p>
+            <img src="./img/servicios.svg" alt="">
+        </div>
+        <div class="grid grid-cols-1 ">
+            <p class="text-green self-center mx-auto my-5 font-semibold">¿Donde queda Tarquinio?</p>
             <img src="./img/mapa.svg" alt="">
         </div>
-        <div>
-            <p>¿Cómo puedo reservar?</p>
-            <a href="">Quiero conocer la Historia</a>
+        <div class="grid grid-cols-1 ">
+            <p class="text-green self-center mx-auto font-semibold">¿Cómo puedo reservar?</p>
         </div>
         
     </main>

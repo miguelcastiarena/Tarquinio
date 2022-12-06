@@ -40,52 +40,96 @@
   },
       }
     </script>
-    <title>Document</title>
+    <title>Tarquinio</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
 </head>
 <body>
-  <header class="sticky top-0 bg-white grid grid-cols-2 py-5 px-8 shadow-lg shadow-gray-500 ">
-    
-    <div>
-      <img src="./img/logo.svg" alt="Tarquinio">
-    </div>
+  <header class="sticky top-0 bg-white">
+    <div class="grid grid-cols-2 shadow-lg shadow-gray-500">
+      <div class="py-5 px-8">
+        <img src="./img/logo.svg" alt="Tarquinio">
+      </div>
   
-    <menu class="flex justify-end">
-      <label for="hamburger">
+      <menu class="flex justify-end py-5 px-8">
+        <label for="hamburger">
         <img class="h-6" src="./img/hamburguer.svg" alt="">
-      </label>
+        </label>
 
-    </menu>        
+      </menu>      
+
+    </div>
     
 
     <input type="checkbox" id="hamburger" class="peer hidden">
 
-    <div class="cols-span-2 hidden peer-checked:block object-center">
-      <div class="text-green my-4 mx-auto font-sans text-xl text-center">Inicio</div>
-      <div class="text-green my-4 mx-auto font-sans text-xl text-center">Contacto</div>
-      <div class="text-green my-4 mx-auto font-sans text-xl text-center">Reservas</div>
+    <div class="col-span-2 hidden peer-checked:block object-center mx-auto">
+      <div class="text-green my-3 mx-auto font-sans text-xl text-center border-b w-screen">Inicio</div>
+      <div class="text-green my-3 mx-auto font-sans text-xl text-center border-b">Contacto</div>
+      <div class="text-green my-3 mx-auto font-sans text-xl text-center shadow-lg shadow-gray-500">Reservas</div>
     </div>
     
     </header>
 
     <main>
+      
         <div class="grid grid-cols-1 ">
             <img class="text-green self-center mx-auto mt-8 mb-3" src="./img/palmeras.svg" alt="">
             <h2 class="text-green self-center mx-auto"> <span class="font-bold">¡Hola!</span>  Te damos la bienvenida</h2>
             <p class="text-green self-center mx-3 my-5 text-center"> <span class="font-bold">Tarquinio</span>  es un lugar para disfrutar <br> de <span class="font-bold">Tigre, el Delta</span> y todas <br> experiencias.
             </p>
         </div>
-        <div>
-            <img src="./img/foto.svg" alt="">
-                
+        <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
+          <div class="snap-center h-45 shrink-0">
+            <img src="./img/foto.svg" />
+          </div>
+          <div class="snap-center h-45 shrink-0">
+            <img src="./img/foto2.svg" />
+          </div>
+          <div class="snap-center h-45 shrink-0">
+            <img src="./img/foto3.svg" />
+          </div>
+          <div class="snap-center h-45 shrink-0">
+            <img src="./img/foto4.svg" />
+          </div>
+          <div class="snap-center h-45 shrink-0">
+            <img src="./img/foto5.svg" />
+          </div>
+          <div class="snap-center h-45 shrink-0">
+            <img src="./img/foto6.svg" />
+          </div>
+          <div class="snap-center h-45 shrink-0">
+            <img src="./img/foto7.svg" />
+          </div>
+          <div class="snap-center h-45 shrink-0">
+            <img src="./img/foto8.svg" />
+          </div>
+
+          
         </div>
         <div class="grid grid-cols-1 ">
           <p class="text-green self-center mx-3 my-5 text-center text-sm">El departamento está preparado para 2 <br> personas, con acceso a terraza y lavadero. <br>
             Ideal para unas hermosas vacaciones o <br> escapada de fin de semanana. </p>
-            <img src="./img/servicios.svg" alt="">
+          
         </div>
+
+
+        <div class="mx-auto rounded-xl overflow-auto">
+          <div class="overflow-auto flex">
+            <div class="mx-auto flex-none py-6 px-3 first:pl-6 last:pr-6">
+              <div class="flex flex-col items-center justify-center gap-3">
+                <img class="w-18 h-18 rounded-full" src="./img/servicios.svg" alt="">
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+
+       
+        
         <div class="grid grid-cols-1 ">
             <p class="text-green self-center mx-auto my-5 font-semibold text-xs">¿Donde queda Tarquinio?</p>
-            <img class="my-6" src="./img/mapa.svg" alt="">
+            <img class="my-6 mx-auto" src="./img/mapa.svg" alt="">
         </div>
         <div class="grid grid-cols-1 ">
             <p class="text-green self-center mx-auto my-5 font-semibold text-xs">¿Cómo puedo reservar?</p>

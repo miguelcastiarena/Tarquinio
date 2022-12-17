@@ -1,155 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-    colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#00953E',
-      'darkgreen': '#057C36',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
-      'white': '#FFF'
-    },
-    fontFamily: {
-      sans: ['Open Sans', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
-    extend: {
-      spacing: {
-        '8xl': '96rem',
-        '9xl': '128rem',
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        colors: {
+          'blue': '#1fb6ff',
+          'purple': '#7e5bef',
+          'pink': '#ff49db',
+          'orange': '#ff7849',
+          'green': '#00953E',
+          'darkgreen': '#057C36',
+          'yellow': '#ffc82c',
+          'gray-dark': '#273444',
+          'gray': '#8492a6',
+          'gray-light': '#d3dce6',
+          'white': '#FFF'
+        },
+        fontFamily: {
+          sans: ['Open Sans', 'sans-serif'],
+          serif: ['Merriweather', 'serif'],
+        },
+        extend: {
+          spacing: {
+            '8xl': '96rem',
+            '9xl': '128rem',
+          },
+          borderRadius: {
+            '4xl': '2rem',
+          }
+        }
       },
-      borderRadius: {
-        '4xl': '2rem',
-      }
     }
-  },
-      }
-    </script>
-    <title>Tarquinio</title>
-    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  </script>
+  <title>Tarquinio</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
 </head>
+
 <body>
   <header class="sticky top-0 bg-white">
     <div class="grid grid-cols-2 shadow-lg shadow-gray-500">
-      <div class="py-5 px-8">
+      <div class="py-5 px-8 flex gap-3 md:col-span-2">
         <img src="./img/logo.svg" alt="Tarquinio">
+        <div class="flex justify-end hidden md:inline-flex gap-3 pr-6 text-green font-semibold">
+          <div>Inicio</div>
+          <div>Contacto</div>
+          <div>Reservas</div>
+          <div>Buscar</div>
+        </div>
       </div>
-  
-      <menu class="flex justify-end py-5 px-8">
+
+      <menu class="flex justify-end py-5 px-8 md:hidden">
         <label for="hamburger">
-        <img class="h-6" src="./img/hamburguer.svg" alt="">
+          <img class="h-6" src="./img/hamburguer.svg" alt="">
         </label>
 
-      </menu>      
+      </menu>
+      
 
     </div>
-    
 
-    <input type="checkbox" id="hamburger" class="peer hidden">
+    <input type="checkbox" id="hamburger" class="peer hidden"> 
 
     <div class="col-span-2 hidden peer-checked:block object-center mx-auto">
       <div class="text-green my-3 mx-auto font-sans text-xl text-center border-b w-screen">Inicio</div>
       <div class="text-green my-3 mx-auto font-sans text-xl text-center border-b">Contacto</div>
       <div class="text-green my-3 mx-auto font-sans text-xl text-center shadow-lg shadow-gray-500">Reservas</div>
     </div>
-    
-    </header>
 
-    <main>
-      
-        <div class="grid grid-cols-1 ">
-            <img class="text-green self-center mx-auto mt-8 mb-3" src="./img/palmeras.svg" alt="">
-            <h2 class="text-green self-center mx-auto"> <span class="font-bold">¡Hola!</span>  Te damos la bienvenida</h2>
-            <p class="text-green self-center mx-3 my-5 text-center"> <span class="font-bold">Tarquinio</span>  es un lugar para disfrutar <br> de <span class="font-bold">Tigre, el Delta</span> y todas <br> experiencias.
-            </p>
+  </header>
+
+  <main>
+
+    <div class="grid grid-cols-1 ">
+      <img class="text-green self-center mx-auto mt-8 mb-3 md:w-44" src="./img/palmeras.svg" alt="">
+      <h2 class="text-green self-center mx-auto md:text-4xl"> <span class="font-bold">¡Hola!</span> Te damos la
+        bienvenida</h2>
+      <p class="text-green self-center mx-5 my-5 text-center md:text-2xl"> <span class="font-bold">Tarquinio</span> es
+        un lugar para disfrutar de <span class="font-bold">Tigre, el Delta</span> y todas <br> experiencias.
+      </p>
+    </div>
+    <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
+      <div class="snap-center h-45 shrink-0">
+        <img src="./img/foto.svg" />
+      </div>
+      <div class="snap-center h-45 shrink-0">
+        <img src="./img/foto2.svg" />
+      </div>
+      <div class="snap-center h-45 shrink-0">
+        <img src="./img/foto3.svg" />
+      </div>
+      <div class="snap-center h-45 shrink-0">
+        <img src="./img/foto4.svg" />
+      </div>
+      <div class="snap-center h-45 shrink-0">
+        <img src="./img/foto5.svg" />
+      </div>
+      <div class="snap-center h-45 shrink-0">
+        <img src="./img/foto6.svg" />
+      </div>
+      <div class="snap-center h-45 shrink-0">
+        <img src="./img/foto7.svg" />
+      </div>
+      <div class="snap-center h-45 shrink-0">
+        <img src="./img/foto8.svg" />
+      </div>
+
+
+    </div>
+    <div class="grid grid-cols-1 ">
+      <p class="text-green self-center mx-5 my-5 text-center text-sm md:text-2xl">El departamento está preparado para 2
+        personas, con acceso a terraza y lavadero.
+        Ideal para unas hermosas vacaciones o escapada de fin de semanana. </p>
+
+    </div>
+
+
+    <div class="mx-auto rounded-xl overflow-auto">
+      <div class="overflow-auto flex">
+        <div class="mx-auto flex-none py-6 px-3 first:pl-6 last:pr-6">
+          <div class="flex flex-col items-center justify-center gap-3">
+            <img class="w-18 h-18 rounded-full" src="./img/servicios.svg" alt="">
+          </div>
+
         </div>
-        <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
-          <div class="snap-center h-45 shrink-0">
-            <img src="./img/foto.svg" />
-          </div>
-          <div class="snap-center h-45 shrink-0">
-            <img src="./img/foto2.svg" />
-          </div>
-          <div class="snap-center h-45 shrink-0">
-            <img src="./img/foto3.svg" />
-          </div>
-          <div class="snap-center h-45 shrink-0">
-            <img src="./img/foto4.svg" />
-          </div>
-          <div class="snap-center h-45 shrink-0">
-            <img src="./img/foto5.svg" />
-          </div>
-          <div class="snap-center h-45 shrink-0">
-            <img src="./img/foto6.svg" />
-          </div>
-          <div class="snap-center h-45 shrink-0">
-            <img src="./img/foto7.svg" />
-          </div>
-          <div class="snap-center h-45 shrink-0">
-            <img src="./img/foto8.svg" />
-          </div>
 
-          
+      </div>
+    </div>
+
+
+
+    <div class="grid grid-cols-1 ">
+      <p class="text-green self-center mx-auto my-5 font-bold text-xs md:text-4xl">¿Donde queda Tarquinio?</p>
+      <img class="my-6 mx-auto" src="./img/mapa.svg" alt="">
+    </div>
+
+
+    <div class="m-5 grid grid-cols-1 md:grid-cols-2">
+      <div class="mx-auto">
+        <p class="text-green self-center px-auto my-5 font-bold text-xs md:text-2xl md:my-8">¿Cómo puedo reservar?</p>
+        <p class="text-green self-center mx-auto my-5 text-xs md:text-xl">Te damos la posibilidad de elegir entre las
+          tres mejores plataformas de <span class="font-semibold">alquiler temporal</span> . Conocerte dentro de una <span class="font-semibold">comunidad</span>  nos da la posibilidad de
+          brindarte una mejor experiencia.</p>
+        <div class="grid grid-cols-3 my-6 mx-auto self-center">
+          <img class="px-3" src="./img/airbnb.svg" alt="airbnb">
+          <img class="px-3" src="./img/booking.svg" alt="booking">
+          <img class="px-3" src="./img/alohar.svg" alt="alohar">
         </div>
-        <div class="grid grid-cols-1 ">
-          <p class="text-green self-center mx-3 my-5 text-center text-sm">El departamento está preparado para 2 <br> personas, con acceso a terraza y lavadero. <br>
-            Ideal para unas hermosas vacaciones o <br> escapada de fin de semanana. </p>
-          
-        </div>
-
-
-        <div class="mx-auto rounded-xl overflow-auto">
-          <div class="overflow-auto flex">
-            <div class="mx-auto flex-none py-6 px-3 first:pl-6 last:pr-6">
-              <div class="flex flex-col items-center justify-center gap-3">
-                <img class="w-18 h-18 rounded-full" src="./img/servicios.svg" alt="">
-              </div>
-              
-            </div>
-            
-          </div>
-        </div>
-
-       
         
-        <div class="grid grid-cols-1 ">
-            <p class="text-green self-center mx-auto my-5 font-semibold text-xs">¿Donde queda Tarquinio?</p>
-            <img class="my-6 mx-auto" src="./img/mapa.svg" alt="">
-        </div>
-        <div class="grid grid-cols-1 ">
-            <p class="text-green self-center mx-auto my-5 font-semibold text-xs">¿Cómo puedo reservar?</p>
-            <div class="grid grid-cols-3 my-6 mx-auto self-center">
-              <img class="px-3" src="./img/airbnb.svg" alt="airbnb">
-              <img class="px-3" src="./img/booking.svg" alt="booking">
-              <img class="px-3" src="./img/alohar.svg" alt="alohar">
-            </div>
-            <img class="mt-10 mb-4 mx-auto self-center" src="./img/boton-historia.svg" alt="">
-        </div>
-        
-    </main>
-    <footer class="bg-darkgreen grid grid-cols-1">
-      <p class="font-semibold text-white self-center mx-auto my-2">Encontranos en</p>
-        <div class="self-center mx-auto grid grid-cols-3 my-2">
-          <img class="mx-2 " src="./img/gooogle.svg" alt="googleicon">
-          <img class="mx-2 " src="./img/facebook.svg" alt="facebookicon">
-          <img class="mx-2 " src="./img/instagram.svg" alt="instagramicon">
-        </div>
-      <p class="text-xs text-white self-center mx-auto my-2">Departamento Tarquinio @2022</p>
-    </footer>
+      </div>
+      <div class="mx-auto">
+        <p class="text-green self-center px-auto my-5 font-bold text-xs md:text-2xl md:my-8">¿Cómo nace Tarquinio?</p>
+        <p class="text-green self-center mx-auto my-5 text-xs text-left md:text-xl">La casa fue <span class="font-semibold">construida a principios del siglo
+          XX</span> , por inmigrantes italianos. La <span class="font-semibold">familia Rocchi</span>  llegó al territorio argentino escapando como tantos de la
+          guerra y la pobreza europea. Encontraron en <span class="font-semibold">Tigre</span>, un hogar y refugio para hijos, nietos y bisnietos. </p>
+        <img class="mt-10 mb-4 mx-auto self-center" src="./img/boton-historia.svg" alt="">
+      </div>
+    </div>
+
+
+  </main>
+  <footer class="bg-darkgreen grid grid-cols-1">
+    <p class="font-semibold text-white self-center mx-auto my-2">Encontranos en</p>
+    <div class="self-center mx-auto grid grid-cols-3 my-2">
+      <img class="mx-2 " src="./img/gooogle.svg" alt="googleicon">
+      <img class="mx-2 " src="./img/facebook.svg" alt="facebookicon">
+      <img class="mx-2 " src="./img/instagram.svg" alt="instagramicon">
+    </div>
+    <p class="text-xs text-white self-center mx-auto my-2">Departamento Tarquinio @2022</p>
+  </footer>
 </body>
+
 </html>
